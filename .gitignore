@@ -1,0 +1,22 @@
+assess/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Secrets
+.env
+*.pem
+*.key
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Uploads (temporary files)
+uploads/
+*.csv
