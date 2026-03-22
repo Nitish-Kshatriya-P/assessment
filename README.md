@@ -70,8 +70,8 @@ docker --version    # Expected: Docker 24.x.x
 Local Setup
 Step 1: Clone the Repository
 Bash
-git clone [https://github.com/YOUR_USERNAME/imdb-content-system.git](https://github.com/YOUR_USERNAME/imdb-content-system.git)
-cd imdb-content-system
+git clone [https://github.com/YOUR_USERNAME/assessment.git](https://github.com/YOUR_USERNAME/assessment.git)
+cd assessment 
 Step 2: Create and Activate Virtual Environment
 Bash
 python -m venv venv
