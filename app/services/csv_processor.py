@@ -22,8 +22,6 @@ def flush_chunk(buffer: list) -> dict:
             "original_language": doc.get("original_language")
         }
         
-        # THE FIX: Safely remove created_at from the document 
-        # before putting it into the $set operation.
         created_at_val = doc.pop("created_at", datetime.utcnow())
         
         update = {
@@ -46,7 +44,6 @@ def flush_chunk(buffer: list) -> dict:
     except BulkWriteError as e:
         logger.error(f"BulkWriteError encountered during chunk flush: {e.details}")
         return {
-            # NOTE: When doing Upserts, MongoDB tracks successes in 'nUpserted', not 'nInserted'
             "inserted": e.details.get("nUpserted", 0), 
             "duplicates": 0
         }
