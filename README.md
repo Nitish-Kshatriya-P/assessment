@@ -278,7 +278,7 @@ python -m pytest tests/test_upload.py -v
 
 test_movies.py — Requires seeded test data
 ─────────────────────────────────────────────────
-These tests query the database and assert against real documents. They require a test database with pre-loaded content before they will pass.
+These tests query the database and assert against real documents. They require a test database with pre-loaded content before they will pass. All the tests are AI_generated.
 
 Required setup before running test_movies.py:
 
