@@ -48,6 +48,7 @@ assessment/
 ├── docker-compose.yml       # MongoDB + Flask containerised setup
 ├── requirements.txt         # Pinned Python dependencies
 └── README.md
+---
 
 ## Prerequisites
 Ensure the following are installed before proceeding:
